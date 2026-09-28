@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="EntranceDose is a premium educational platform for medical and paramedical entrance exam preparation."
-    />
+    <meta name="description" content="EntranceDose provides live classes, past questions, mock tests, and study plans for Nepal's medical, engineering, nursing, and paramedical entrance exams." />
+    <meta property="og:title" content="EntranceDose | Your Success Dose" />
+    <meta property="og:description" content="Learn daily and crack confidently with EntranceDose." />
+    <meta property="og:type" content="website" />
     <title>EntranceDose | Medical & Paramedical Exam Preparation</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,18 +18,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="animation-container" aria-hidden="true">
-      <canvas id="scroll-canvas"></canvas>
-      <div class="bg-overlay"></div>
-    </div>
-
     <header class="site-header">
       <nav class="navbar container">
         <a href="#top" class="brand" aria-label="EntranceDose home">EntranceDose</a>
 
-        <div class="nav-links">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
           <a href="#courses">Courses</a>
-          <a href="#youtube">YouTube</a>
+          <a href="#platform">Platform</a>
           <a href="#why">Why EntranceDose</a>
           <a href="#journey">Learning Journey</a>
           <a href="#faq">FAQ</a>
@@ -64,6 +63,57 @@
             <a href="#courses" class="btn btn-primary">ENROLL NOW</a>
             <a href="#why" class="btn btn-secondary">EXPLORE COURSES</a>
           </div>
+        </div>
+      </section>
+
+      <section class="photo-slider-section container reveal" aria-label="EntranceDose learning highlights">
+        <div class="photo-slider" data-slider>
+          <div class="photo-slides">
+            <article class="photo-slide active" data-slide>
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&q=85" alt="Medical student studying in a bright clinical learning space" />
+              <div class="photo-caption"><span>01 / CEE PREPARATION</span><h2>Learn with a clear path to your entrance goal.</h2><p>Live classes, focused practice, and guidance for the next step.</p></div>
+            </article>
+            <article class="photo-slide" data-slide>
+              <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1800&q=85" alt="Modern hospital corridor representing healthcare education" loading="lazy" />
+              <div class="photo-caption"><span>02 / MEDICAL TRACKS</span><h2>Build the knowledge healthcare careers demand.</h2><p>Prepare for MBBS, BDS, Nursing, BPH, BMLT, BSW, B Opt. and more.</p></div>
+            </article>
+            <article class="photo-slide" data-slide>
+              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1800&q=85" alt="Student notes and study materials on a desk" loading="lazy" />
+              <div class="photo-caption"><span>03 / SMART PRACTICE</span><h2>Turn every study session into progress.</h2><p>Use notes, past questions, mock tests, and regular revision.</p></div>
+            </article>
+            <article class="photo-slide" data-slide>
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1800&q=85" alt="Students learning together at a table" loading="lazy" />
+              <div class="photo-caption"><span>04 / GUIDED LEARNING</span><h2>Stay supported from first class to final revision.</h2><p>Learn alongside a focused community with mentor support.</p></div>
+            </article>
+          </div>
+          <div class="photo-slider-controls">
+            <button class="slider-button slider-prev" type="button" aria-label="Previous learning highlight">&larr;</button>
+            <div class="slider-dots" role="tablist" aria-label="Learning highlights">
+              <button class="slider-dot active" type="button" role="tab" aria-label="Show highlight 1" aria-selected="true" data-slide-to="0"></button>
+              <button class="slider-dot" type="button" role="tab" aria-label="Show highlight 2" aria-selected="false" data-slide-to="1"></button>
+              <button class="slider-dot" type="button" role="tab" aria-label="Show highlight 3" aria-selected="false" data-slide-to="2"></button>
+              <button class="slider-dot" type="button" role="tab" aria-label="Show highlight 4" aria-selected="false" data-slide-to="3"></button>
+            </div>
+            <button class="slider-button slider-next" type="button" aria-label="Next learning highlight">&rarr;</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="cee-zone" class="campaign-section container reveal">
+        <div class="campaign-copy">
+          <span class="mini-label">CEE ZONE</span>
+          <h2>Learn daily, crack confidently.</h2>
+          <p>Live classes, past questions and full mock tests with Nepal's top entrance faculty.</p>
+          <div class="campaign-actions">
+            <a class="btn btn-primary" href="https://wa.me/9779863423123" target="_blank" rel="noopener">WHATSAPP US</a>
+            <a class="text-link" href="#courses">VIEW COURSES -&gt;</a>
+          </div>
+        </div>
+        <div class="campaign-points">
+          <div><strong>01</strong><span>LIVE DAILY<br />LIVE CLASSES</span></div>
+          <div><strong>02</strong><span>ONE SHOT OF<br />EVERY TOPIC</span></div>
+          <div><strong>03</strong><span>SET-WISE<br />SOLUTIONS</span></div>
+          <div><strong>04</strong><span>LAST YEAR<br />RECORDED Q&amp;As</span></div>
         </div>
       </section>
 
@@ -201,6 +251,42 @@
                 </div>
                 <a href="#contact" class="course-link">Enroll</a>
               </div>
+            </div>
+          </article>
+
+          <article class="course-card live-course-card">
+            <div class="course-badge">CEE 2027</div>
+            <div class="course-visual visual-four"><span>NEXUS 7.0</span></div>
+            <div class="course-body">
+              <h3>NEXUS 7.0</h3>
+              <p>MBBS, Nursing, BDS and paramedical preparation with concept-based live classes and complete syllabus coverage.</p>
+              <div class="course-rating" aria-label="Rated 4.2 out of 5 from 20 reviews">4.2 &#9733; <small>(20)</small></div>
+              <ul class="course-includes"><li>Daily live classes</li><li>Recorded videos and PDFs</li><li>Daily and weekly exams</li></ul>
+              <div class="price-row"><div class="prices"><span class="old-price">NPR 10,000</span><span class="new-price">NPR 7,999</span></div><a href="https://wa.me/9779863423123" target="_blank" rel="noopener" class="course-link">ENROLL NOW</a></div>
+            </div>
+          </article>
+
+          <article class="course-card live-course-card">
+            <div class="course-badge">New Course</div>
+            <div class="course-visual visual-five"><span>IOE</span></div>
+            <div class="course-body">
+              <h3>IOE Rank Booster</h3>
+              <p>Engineering entrance preparation for Physics, Chemistry and Maths with full IOE-pattern mock tests.</p>
+              <div class="course-rating" aria-label="Rated 4.6 out of 5 from 41 reviews">4.6 &#9733; <small>(41)</small></div>
+              <ul class="course-includes"><li>Physics, Chemistry, Maths</li><li>15 full IOE-pattern mock tests</li><li>Rank-focused practice</li></ul>
+              <div class="price-row"><div class="prices"><span class="old-price">NPR 8,000</span><span class="new-price">NPR 5,999</span></div><a href="https://wa.me/9779863423123" target="_blank" rel="noopener" class="course-link">ENROLL NOW</a></div>
+            </div>
+          </article>
+
+          <article class="course-card live-course-card">
+            <div class="course-badge">New Course</div>
+            <div class="course-visual visual-six"><span>NURSING</span></div>
+            <div class="course-body">
+              <h3>Nursing Entrance Batch</h3>
+              <p>Nursing entrance preparation for BSc Nursing and BN students with weekly tests and focused revision.</p>
+              <div class="course-rating" aria-label="Rated 4.5 out of 5 from 18 reviews">4.5 &#9733; <small>(18)</small></div>
+              <ul class="course-includes"><li>BSc Nursing and BN focus</li><li>Weekly tests</li><li>Entrance revision support</li></ul>
+              <div class="price-row"><div class="prices"><span class="old-price">NPR 6,000</span><span class="new-price">NPR 4,499</span></div><a href="https://wa.me/9779863423123" target="_blank" rel="noopener" class="course-link">ENROLL NOW</a></div>
             </div>
           </article>
         </div>
@@ -399,8 +485,24 @@
           <form class="newsletter-form">
             <input type="email" placeholder="Email address" aria-label="Email address" />
             <button type="submit">Subscribe</button>
+            <span class="form-message" role="status" aria-live="polite"></span>
           </form>
         </div>
+      </section>
+
+      <section id="platform" class="platform-section container reveal">
+        <div class="section-head"><span class="mini-label">Everything you need to prepare</span><h2>A complete entrance preparation platform.</h2></div>
+        <div class="platform-grid">
+          <article><span class="platform-icon">01</span><h3>Mock Tests</h3><p>Practice under exam conditions and measure your progress.</p></article>
+          <article><span class="platform-icon">02</span><h3>AI Study Planner</h3><p>Keep your preparation organized around the work that matters.</p></article>
+          <article><span class="platform-icon">03</span><h3>Doubt Solver</h3><p>Get support when a difficult concept slows you down.</p></article>
+          <article><span class="platform-icon">04</span><h3>Video Lessons</h3><p>Learn from recorded lessons whenever you need to revise.</p></article>
+        </div>
+      </section>
+
+      <section class="final-cta container reveal">
+        <div><span class="mini-label">Ready to crack your entrance?</span><h2>Start free today. Talk to our counsellors, no strings attached.</h2></div>
+        <a class="btn btn-primary" href="https://wa.me/9779863423123" target="_blank" rel="noopener">START PREPARING</a>
       </section>
     </main>
 
@@ -437,8 +539,9 @@
           <ul>
             <li>Pokhara, FulBari</li>
             <li><a href="mailto:support@entrancedose.com">support@entrancedose.com</a></li>
-            <li><a href="tel:9702020389">9702020389</a></li>
-            <li><a href="tel:9801472070">9801472070</a></li>
+            <li><a href="tel:+9779863423123">9863423123</a></li>
+            <li><a href="tel:+9779708080189">9708080189</a></li>
+            <li><a href="https://wa.me/9779863423123" target="_blank" rel="noopener">WhatsApp Us</a></li>
           </ul>
         </div>
       </div>
